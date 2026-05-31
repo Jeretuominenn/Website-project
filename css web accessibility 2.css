@@ -1,0 +1,268 @@
+:root {
+    --primary-color: #000000;
+    --secondary-color: #333333;
+    --white: #ffffff;
+    --light-green: #b8f2d0;
+    --mid-green: #b9e4c9;
+    --dark-green: #5a8f7a;
+    --card-green: #a9d6b8;
+    --focus-outline: 2px solid #000000;
+}
+/* =========================
+   BODY JA POHJA
+========================= */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+
+    background-color: var(--light-green) !important;
+
+    color: #020000;
+}
+
+main {
+    flex: 1;
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: 40px auto;
+
+    text-align: center;
+
+    background-color: transparent !important;
+
+    color: #000000;
+}
+
+/* =========================
+   SKIP LINK
+========================= */
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: #000000;
+    padding: 8px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* =========================
+   NAVIGOINTI JA LOGO
+========================= */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: var(--dark-green);
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.site-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    font-size: 23px;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+
+    padding: 6px 12px;
+    border: 2px solid transparent;
+    border-radius: 6px;
+
+    transition: all 0.2s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a:focus {
+    text-decoration: underline;
+    border: 2px solid #000;
+    background-color: rgba(255, 255, 255, 0.4);
+    outline: none;
+}
+
+/* =========================
+   OTSIKOT
+========================= */
+
+h1 {
+    color: #000000;
+    font-size: 42px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    margin-bottom: 15px;
+}
+
+h2,
+h3 {
+    color: #020000;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* =========================
+   GALLERIA TEKSTI
+========================= */
+
+.gallery-text {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+}
+
+/* =========================
+   YHTEYSTIETO NAPPI
+========================= */
+
+.contact-button-wrapper {
+    margin: 30px 0;
+}
+
+.contact-button {
+    display: inline-block;
+
+    padding: 14px 30px;
+
+    background-color: var(--dark-green);
+    color: #000000;
+
+    font-size: 1.1rem;
+    font-weight: bold;
+
+    text-decoration: none;
+
+    border-radius: 10px;
+    border: 2px solid transparent;
+
+    transition: all 0.25s ease;
+}
+
+.contact-button:hover,
+.contact-button:focus {
+    background-color: #4d7d6b;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    border: 2px solid #000;
+
+    transform: translateY(-2px);
+
+    outline: none;
+}
+
+/* =========================
+   LINKIT
+========================= */
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: var(--secondary-color);
+}
+
+/* =========================
+   KUVAT
+========================= */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* =========================
+   CAROUSEL
+========================= */
+
+.carousel {
+    max-width: 1000px;
+    margin: 40px auto;
+    background-color: transparent;
+}
+
+.carousel img {
+    height: 600px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: var(--dark-green);
+    padding: 20px;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+footer a {
+    color: #000;
+    text-decoration: none;
+
+    padding: 5px 10px;
+
+    border: 2px solid transparent;
+    border-radius: 6px;
+
+    transition: all 0.2s ease;
+}
+
+footer a:hover,
+footer a:focus {
+    text-decoration: underline;
+
+    border: 2px solid #000;
+
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
