@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tattoo studio X kuvagalleria</title>
+
+  <link rel="stylesheet" href="css web accessibility 2.css"/>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header role="banner">
+    <nav aria-label="Main navigation" class="navbar">
+
+      <div class="logo-area">
+        <img src="logo nettisivuprojektiin.jpg" alt="Tattoo Studio X logo" class="logo">
+        <div class="site-title">Tattoo studio X</div>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="website exercise 2.html" aria-current="page">Kuvagalleria</a></li>
+        <li><a href="website exercise 3.html">Yhteystiedot</a></li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <h1>Kuvagalleria</h1>
+
+    <p class="gallery-text">
+      Alla näet erilaisia tekemiämme töitä ja projekteja.
+    </p>
+
+    <div class="contact-button-wrapper">
+      <a href="website exercise 3.html" class="contact-button">
+        Ota yhteyttä
+      </a>
+    </div>
+
+    <!-- Bootstrap Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Ensimmäinen kuva"></button>
+
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Toinen kuva"></button>
+
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Kolmas kuva"></button>
+      </div>
+
+      <!-- Images -->
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <img src="https://cdn.pixabay.com/photo/2016/02/19/11/08/woman-1209592_1280.jpg"
+               class="d-block w-100"
+               alt="Naisella näkyvä tatuointi käsivarressa">
+        </div>
+
+        <div class="carousel-item">
+          <img src="https://cdn.pixabay.com/photo/2020/04/06/08/21/mendi-5008713_1280.jpg"
+               class="d-block w-100"
+               alt="Koristeellinen hennatyyppinen tatuointi kädessä">
+        </div>
+
+        <div class="carousel-item">
+          <img src="https://cdn.pixabay.com/photo/2025/04/15/15/45/nature-9535709_1280.png"
+               class="d-block w-100"
+               alt="Luontoteemainen tatuointityyli">
+        </div>
+
+      </div>
+
+      <!-- Previous button -->
+      <button class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev">
+
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+
+      </button>
+
+      <!-- Next button -->
+      <button class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next">
+
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+
+      </button>
+
+    </div>
+
+  </main>
+
+ <footer>
+        <h2 class="visually-hidden">Site footer</h2>
+        <nav aria-label="Footer navigation">
+            <ul>
+            <li><a href="index.html">@Tattoo company X</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Terms_of_service">Käyttöehdot</a></li>
+            <li><a href="https://europa.eu/youreurope/business/dealing-with-customers/data-protection/data-protection-gdpr/index_en.htm"> Palveluiden ja sivuston yksityisyys</a></li>
+        </ul>
+        </nav>
+    </footer>
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

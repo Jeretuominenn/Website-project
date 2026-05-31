@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tattoo studio X yhteydenotto</title>
+  <link rel="stylesheet" href="css web accessibility 3.css"/>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
+  <header role="banner">
+    <nav aria-label="Main navigation" class="navbar">
+   <div class="logo-area">
+      <img src="logo nettisivuprojektiin.jpg" alt="Yrityksen logo" class="logo">
+      <div class="site-title">Tattoo studio X</div>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="index.html" aria-current="page">Etusivu</a></li>
+      <li><a href="website exercise 2.html">Kuvagalleria</a></li>
+      <li><a href="website exercise 3.html">Yhteystiedot</a></li>
+    </ul>
+
+  </nav>
+</header>
+
+    <main id="main-content">
+        <h1>Haluatko hinta-arvion työstä ja varata ajan? Jätä meille yhteystietosi</h1>
+
+        <div class="content-wrapper"> 
+            <address>
+                <p>Olemme kahden yrittäjän perustama tatuointistudio. Yrityksemme on ollut 10 vuotta olemassa ja studiomme sijaitsee Turussa </p>
+                <p>Viereisen lomakkeen avulla voit jättää meille yhteydenottopyynnön. Voit myös soittaa alla olevaan numeroon tai lähettää meille sähköpostilla esimerkiksi mallikuvia ideoistasi</p>
+                <p>Puhelin: <a href="tel:+35810103310" aria-label="Call us at +358 10 10 3310">+358 10 10 3310</a></p>
+                <p>Sähköposti: <a href="jeretuominen58@gmail.com" aria-label="Send email to jeretuominen58@gmail.com">jeretuominen58@gmail.com</a></p>
+            </address>
+
+            <section class="contact-form" aria-labelledby="contact-heading">
+                <h2 id="contact-heading">Jätä meille yhteystietosi lomakkeella: </h2>
+                <div class="form-wrapper">
+                    <form action="mailto:sinun.sähköposti@esimerkki.com" method="POST" enctype="text/plain">
+
+                        <label for="name">Etu- ja sukunimesi</label>
+                        <input type="text" id="name" name="name" placeholder="Etunimi Sukunimi" aria-describedby="name-help" required />
+                        <small id="name-help">Kirjoita tähän koko nimesi.</small>
+
+                        <label for="email">Sähköpostisi:</label>
+                        <input type="email" id="email" name="email" placeholder="sähköpostiosoitteesi" aria-describedby="email-help" required />
+                        <small id="email-help">Kirjoita tähän käytössäsi oleva sähköpostiosoite.</small>
+
+                        <label for="message">Lisätietoja:</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Kirjoita tähän tarkempia toiveitasi tatuointiin liittyen" aria-describedby="message-help" required></textarea>
+                        <small id="message-help">Kerro tässä meille, millainen idea sinulla on tai millainen tatuointi kiinnostaisi sinua</small>
+
+                        <button type="submit">Lähetä</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+   <footer>
+        <h2 class="visually-hidden">Site footer</h2>
+        <nav aria-label="Footer navigation">
+            <ul>
+            <li><a href="index.html">@Tattoo company X</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Terms_of_service">Käyttöehdot</a></li>
+            <li><a href="https://europa.eu/youreurope/business/dealing-with-customers/data-protection/data-protection-gdpr/index_en.htm"> Palveluiden ja sivuston yksityisyys</a></li>
+        </ul>
+        </nav>
+    </footer>
+</body>
+</html>
