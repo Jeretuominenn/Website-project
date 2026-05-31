@@ -1,0 +1,230 @@
+:root {
+    --primary-color: #000000;
+    --secondary-color: #333333;
+    --white: #ffffff;
+    --light-green: #dff5e1;
+    --mid-green: #b9e4c9;
+    --dark-green: #5a8f7a;
+    --card-green: #a9d6b8;
+    --focus-outline: 2px solid #000000;
+}
+
+/* =========================
+   Pohja
+========================= */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+
+    /* vaaleanvihreä tausta */
+    background-color: var(--light-green);
+
+    color: #020000;
+}
+
+/* =========================
+   Lukulaitteen avustus "skip to the main content"
+========================= */
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* =========================
+   Navigointi ja logo
+========================= */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: var(--dark-green);
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.site-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    font-size: 23px;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+
+    padding: 6px 12px;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a:focus {
+    text-decoration: underline;
+    border: 2px solid #000;
+    background-color: rgba(255, 255, 255, 0.4);
+    outline: none; 
+}
+
+/* =========================
+   Otsikko
+========================= */
+
+h1 {
+    text-align: center;
+    margin: 20px;
+}
+
+/* =========================
+   Infolaatikon ja taustakuvan stylays
+========================= */
+
+.hero-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.info-section {
+    position: relative;
+    text-align: center;
+    margin: 20px;
+}
+
+.info-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(169, 214, 184, 0.95);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+/* =========================
+   Napit ja niiden toiminnallisuus
+========================= */
+
+.button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: 2px solid #000;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.button,
+.button:hover,
+.button:focus,
+.button:active {
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #eaeaea;
+}
+
+/* =========================
+   Korttien sisältö
+========================= */
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: var(--card-green);
+    color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center; 
+}
+.card ul {
+    list-style-position: inside;
+    padding: 0;
+    margin: 10px 0;
+}
+
+/* =========================
+   FOOTER 
+========================= */
+
+footer {
+    background-color: var(--dark-green);
+    padding: 20px;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+footer a {
+    color: #000;
+    text-decoration: none;
+    padding: 5px 10px;              
+    border: 2px solid transparent;  
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+/* hover footerissa */
+footer a:hover,
+footer a:focus {
+    text-decoration: underline;
+    border: 2px solid #000;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+
+
+
